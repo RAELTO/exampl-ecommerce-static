@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ titles.2.title }}</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--Header-->
+    {{> header2 }}
+    <!--/Header-->
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="../img/products/f1.jpg" width="100%" id="MainImg" alt="pr1">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="../img/products/f1.1.jpg" class="small-img" alt="img-alt1">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/products/f1.11.jpg" class="small-img" alt="img-alt2">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/products/f1.12.jpg" class="small-img" alt="img-alt2">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/products/f1.13.jpg" class="small-img" alt="img-alt3">
+                </div>
+            </div>
+        </div>
+        <div class="single-prod-details">
+            <h6 id="h6">Home / T-Shirt</h6>
+            <h4>Women's Fashion T-Shirt</h4>
+            <h2>$139.00</h2>
+            <select>
+                <option>Select Size</option>
+                <option>XXL</option>
+                <option>XL</option>
+                <option>Large</option>
+                <option>Medium</option>
+                <option>Small</option>
+            </select>
+            <input type="number" value="1">
+            <button class="normal">Add To Cart</button>
+            <h4>Product Details</h4>
+            <span>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Voluptates, deserunt quidem repellat placeat porro odit?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Autem, corporis!
+            </span>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>Summer Collection New Modern Design</p>
+        <div class="prod-container">
+            <div class="prod">
+                <img src="../img/products/n1.jpg" alt="prd1">
+                <div class="descr">
+                    <span>Brand1</span>
+                    <h5>Product 1</h5>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="prod">
+                <img src="../img/products/n2.jpg" alt="prd1">
+                <div class="descr">
+                    <span>Brand2</span>
+                    <h5>product 2</h5>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="prod">
+                <img src="../img/products/n3.jpg" alt="prd1">
+                <div class="descr">
+                    <span>Brand3</span>
+                    <h5>product 3</h5>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="prod">
+                <img src="../img/products/n4.jpg" alt="prd1">
+                <div class="descr">
+                    <span>Brand4</span>
+                    <h5>product 4</h5>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+        </div>
+    </section>
+
+    {{> newsletter }}
+
+    {{> footer }}
+
+    <script src="../assets/js/singleP.js"></script>
+</body>
+</html>
