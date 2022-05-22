@@ -20,7 +20,8 @@ const info = {
         {"title": "blog"},
         {"title": "about"},
         {"title": "contact"},
-        {"title": "cart"}
+        {"title": "cart"},
+        {"title": "Login"}
     ]
 }
 
@@ -53,6 +54,9 @@ app.get('/cart', (req, res) => {
     res.render('cart', info);
 });
 
+app.get('/login', (req, res) => {
+    res.render('login', info);
+});
 
 app.get('*', (req, res) => {
     res.send('404 | Page not found' );

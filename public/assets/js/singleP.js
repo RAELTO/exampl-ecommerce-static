@@ -13,3 +13,8 @@ smallimg[2].onclick = () => {
 smallimg[3].onclick = () => {
     MainImg.src = smallimg[3].src;
 }
+
+for (let index = 0; index < array.length; index++) {
+    const element = array[index];
+    
+}

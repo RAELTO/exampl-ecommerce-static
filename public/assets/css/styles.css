@@ -1004,6 +1004,173 @@ footer .copyright{
 
 /*End Cart*/
 
+/* LOGIN START */
+
+#log-in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #47d2f5, #128bdb);
+}
+
+.box{
+    position: relative;
+}
+
+.box .square{
+    position: absolute;
+    backdrop-filter: blur(0.3125rem);
+    box-shadow: 0 1.5625rem 2.8125rem rgba(0,0,0,0.1);
+    border: 0.0625rem solid rgba(255,255,255,0.5);
+    border-right: 0.0625rem solid rgba(255,255,255,0.2);
+    border-bottom: 0.0625rem solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.1);
+    border-radius: 0.625rem;
+    animation: animate 10s linear infinite;
+    animation-delay: calc(-1s * var(--i));
+}
+
+@keyframes animate{
+    0%,100%{
+        transform: translateY(-2.5rem);
+    }
+    50%{
+        transform: translateY(2.5rem);
+    }
+}
+
+.box .square:nth-child(1){
+    top: -3.125rem;
+    right: -3.75rem;
+    width: 6.25rem;
+    height: 6.25rem;
+}
+
+.box .square:nth-child(2){
+    top: 9.375rem;
+    left: -6.25rem;
+    width: 7.5rem;
+    height: 7.5rem;
+    z-index: 2;
+}
+
+.box .square:nth-child(3){
+    bottom: 3.125rem;
+    right: -3.75rem;
+    width: 5rem;
+    height: 5rem;
+}
+
+.box .square:nth-child(4){
+    bottom: -5rem;
+    left: 6.25rem;
+    width: 3.125rem;
+    height: 3.125rem;
+}
+
+.box .square:nth-child(5){
+    top: -5rem;
+    left: 8.75rem;
+    width: 3.75rem;
+    height: 3.75rem;
+}
+
+.container{
+    position: relative;
+    width: 25rem;
+    min-height: 25rem;
+    background: rgba(255,255,255,0.1);
+    border-radius: 0.625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(0.3125rem);
+    box-shadow: 0 1.5625rem 2.8125rem rgba(0,0,0,0.1);
+    border: 0.0625rem solid rgba(255,255,255,0.5);
+    border-right: 0.0625rem solid rgba(255,255,255,0.2);
+    border-bottom: 0.0625rem solid rgba(255,255,255,0.2);
+}
+
+.form{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 2.5rem;
+}
+
+.form h2{
+    position: relative;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.0625rem;
+    margin-bottom: 2.5rem;
+}
+
+.form h2::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 5rem;
+    height: 0.25rem;
+    background: #000;
+}
+
+.form .inputBox{
+    width: 100%;
+    margin-top: 1.25rem;
+}
+
+.form .inputBox input{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+    padding: 0.625rem 1.25rem;
+    border-radius: 2.1875rem;
+    border: 0.0625rem solid rgba(255,255,255,0.5);
+    border-right: 0.0625rem solid rgba(255,255,255,0.2);
+    border-bottom: 0.0625rem solid rgba(255,255,255,0.2);
+    font-size: 1rem;
+    letter-spacing: 0.0625rem;
+    color: #000;
+    box-shadow: 0 0.3125rem 0.9375rem rgba(0,0,0,0.05);
+}
+
+.form .inputBox input::placeholder{
+    color: #606063;
+}
+
+.form .inputBox input[type="submit"]{
+    color: #fff;
+    background-color: #000;
+    max-width: 6.25rem;
+    margin-bottom: 1.25rem;
+    font-weight: bold;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.form .inputBox input[type="submit"]:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+.forget{
+    margin-top: 0.3125rem;
+    color: #000;
+}
+
+.forget a{
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/* LOGIN END */
+
 /* Responsive media */
 
 @media (max-width: 850px) {
